@@ -1,0 +1,53 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.televisao;
+
+/**
+ *
+ * @author unifmchishman
+ */
+import java.util.Scanner
+public class televisaoTeste {
+    public static void main(String args[]){
+        Scanner input = new Scanner(System.in);
+        Televisao tv1 = new Televisao();
+        Televisao tv2 = new Televisao();
+        
+        System.out.println("Televisão 1:");
+        System.out.println("Digite o modelo: ");
+        tv1.setModelo(input.next());
+        System.out.println("Digite o preço: ");
+        tv1.setPreco(input.nextFloat());
+        System.out.println("Digite o tamanho: ");
+        tv1.setTamanho(input.nextFloat());
+        System.out.println("Digite o volume: ");
+        tv1.setVolume(input.nextInt());
+        System.out.println("Digite o canal: ");
+        tv1.setCanal(input.nextInt());
+        System.out.println("Digite o estado: ");
+        tv1.setLigada(input.nextBoolean());
+        
+        System.out.println("Televisão 2:");
+        System.out.println("Digite o modelo: ");
+        tv2.setModelo(input.next());
+        System.out.println("Digite o preço: ");
+        tv2.setPreco(input.nextFloat());
+        System.out.println("Digite o tamanho: ");
+        tv2.setTamanho(input.nextFloat());
+        System.out.println("Digite o volume: ");
+        tv2.setVolume(input.nextInt());
+        System.out.println("Digite o canal: ");
+        tv2.setCanal(input.nextInt());
+        System.out.println("Digite o estado: ");
+        tv2.setLigada(input.nextBoolean());
+        
+        tv1.alteraVolume(-3);
+        tv2.alteraVolume(5);
+        tv1.diminuiCanal();
+        tv2.aumentaCanal();
+        
+        tv2.desligarTv();
+    }
+}
