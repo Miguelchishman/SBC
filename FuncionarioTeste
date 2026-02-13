@@ -1,0 +1,55 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.funcionario;
+
+/**
+ *
+ * @author unifmchishman
+ */
+
+import java.util.Scanner;
+public class FuncionarioTeste {
+    public static void main(String args[]){
+        Scanner input = new Scanner(System.in);
+        Funcionario funcionario1 = new Funcionario();
+        Funcionario funcionario2 = new Funcionario();
+        
+        funcionario1.setNome("Jorge");
+        funcionario1.setSobrenome("Azevedo");
+        funcionario1.setSalarioMensal(1200);
+        
+        funcionario2.setNome("Richard");
+        funcionario2.setSobrenome("Clempton");
+        funcionario2.setSalarioMensal(7200);
+        
+        System.out.println("Funcionario 1:");
+        System.out.println("Nome: " + funcionario1.getNome());
+        System.out.println("Sobrenome: " + funcionario1.getSobrenome());
+        System.out.println("Salario Mensal: " + funcionario1.getSalarioMensal());
+        System.out.println("Salario Anual: " + funcionario1.getSalarioAnual());
+        
+        System.out.println("Funcionario 2:");
+        System.out.println("Nome: " + funcionario2.getNome());
+        System.out.println("Sobrenome: " + funcionario2.getSobrenome());
+        System.out.println("Salario Mensal: " + funcionario2.getSalarioMensal());
+        System.out.println("Salario Anual: " + funcionario1.getSalarioAnual());
+        
+        // Aumento
+        funcionario1.setSalarioMensal(funcionario1.getSalarioMensal() + funcionario1.getSalarioMensal()/10);
+        funcionario2.setSalarioMensal(funcionario2.getSalarioMensal() + funcionario2.getSalarioMensal()/10);
+        System.out.println("DEPOIS DO AUMENTO: ");
+        System.out.println("Funcionario 1:");
+        System.out.println("Nome: " + funcionario1.getNome());
+        System.out.println("Sobrenome: " + funcionario1.getSobrenome());
+        System.out.println("Salario Mensal: " + funcionario1.getSalarioMensal());
+        System.out.println("Salario Anual: " + funcionario1.getSalarioAnual());
+        
+        System.out.println("Funcionario 2:");
+        System.out.println("Nome: " + funcionario2.getNome());
+        System.out.println("Sobrenome: " + funcionario2.getSobrenome());
+        System.out.println("Salario Mensal: " + funcionario2.getSalarioMensal());
+        System.out.println("Salario Anual: " + funcionario1.getSalarioAnual());
+    }
+}
