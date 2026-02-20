@@ -69,4 +69,10 @@ public class Televisao {
     public void aumentaCanal(){
         this.canal++;
     }
+    
+    @Override
+    public String toString(){
+        return "Modelo-" + modelo + "\nPreco-" + preco + "\nTamanho-" + tamanho + "\nVolume-" + volume +
+                "\nCanal-" + canal + "\nEstado-" + ligada;
+    }
 }
