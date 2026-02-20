@@ -69,6 +69,12 @@ public class Televisao {
     public void aumentaCanal(){
         this.canal++;
     }
+
+    // private String modelo;
+    // private float preco, tamanho;
+    // private int volume, canal;
+    // private boolean ligada;
+
     
     @Override
     public String toString(){
